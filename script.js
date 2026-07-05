@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTypingEffect();
     initCountUpAnimations();
     initSmoothScroll();
+    initBentoGlow();
 });
 
 /* --- Navigation --- */
@@ -195,6 +196,20 @@ function initSmoothScroll() {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+}
+
+/* --- Bento Card Mouse Hover Glow --- */
+function initBentoGlow() {
+    const cards = document.querySelectorAll('.bento-card, .timeline-card, .project__card, .hackathon-card, .cert__card, .contact__card');
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
         });
     });
 }

@@ -14,11 +14,13 @@
         content="Results-driven B.Tech CS student building intelligent, scalable systems with Generative AI, LLMs, and MCP server integration.">
     <meta property="og:type" content="website">
     <title>Kollipara VMK Mithra — AI & Software Developer</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,7 +29,7 @@
     <!-- Noise overlay for premium texture -->
     <div class="noise-overlay" aria-hidden="true"></div>
 
-    <!-- Navigation -->
+    <!-- Navigation (Floating Pill Navbar) -->
     <nav class="nav" id="navbar">
         <div class="nav__container">
             <a href="#hero" class="nav__logo">
@@ -35,6 +37,7 @@
             </a>
             <ul class="nav__links" id="navLinks">
                 <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#education" class="nav__link">Education</a></li>
                 <li><a href="#experience" class="nav__link">Experience</a></li>
                 <li><a href="#projects" class="nav__link">Projects</a></li>
                 <li><a href="#gallery" class="nav__link">Gallery</a></li>
@@ -54,6 +57,7 @@
     <div class="mobile-nav" id="mobileNav">
         <ul class="mobile-nav__links">
             <li><a href="#about" class="mobile-nav__link">About</a></li>
+            <li><a href="#education" class="mobile-nav__link">Education</a></li>
             <li><a href="#experience" class="mobile-nav__link">Experience</a></li>
             <li><a href="#projects" class="mobile-nav__link">Projects</a></li>
             <li><a href="#gallery" class="mobile-nav__link">Gallery</a></li>
@@ -70,7 +74,7 @@
             <div class="hero__gradient-orb hero__gradient-orb--3"></div>
             <div class="hero__grid-lines" aria-hidden="true"></div>
         </div>
-        <div class="hero__container">
+        <div class="hero__container container">
             <div class="hero__content">
                 <div class="hero__badge reveal">
                     <span class="hero__badge-dot"></span>
@@ -89,8 +93,8 @@
                 </p>
                 <div class="hero__actions reveal">
                     <a href="#projects" class="btn btn--primary">
-                        <span>View My Work</span>
-                        <i class="ri-arrow-right-line"></i>
+                           <span>View My Work</span>
+                           <i class="ri-arrow-right-line"></i>
                     </a>
                     <a href="#contact" class="btn btn--outline">
                         <span>Get in Touch</span>
@@ -142,66 +146,126 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About & Skills (Bento Grid) -->
     <section class="section about" id="about">
         <div class="container">
             <div class="section__header reveal">
-                <span class="section__label">01 — About</span>
-                <h2 class="section__title">Who I Am</h2>
+                <span class="section__label">01 — About & Skills</span>
+                <h2 class="section__title">Who I Am & My Arsenal</h2>
             </div>
-            <div class="about__grid">
-                <div class="about__text reveal">
-                    <p class="about__description">
-                        I'm a <strong>B.Tech Computer Science</strong> student at <strong>Amrita Vishwa Vidyapeetham,
-                            Amaravati</strong>,
-                        with a minor from <strong>IIT Mandi</strong> in Advanced Computing and Emerging Technologies. My
-                        passion lies at
-                        the intersection of <strong>Artificial Intelligence</strong> and <strong>Software
-                            Engineering</strong>.
-                    </p>
-                    <p class="about__description">
-                        With hands-on experience in <strong>Generative AI, LLMs, RAG systems, and MCP server
-                            integration</strong>,
-                        I focus on building intelligent tools that are practical, user-centric, and deliver real-world
-                        impact.
-                        From winning national hackathons to founding a technical club for 350+ students, I thrive on
-                        solving
-                        complex problems and building communities.
-                    </p>
-                    <p class="about__description">
-                        As a <strong>Microsoft Student Ambassador</strong>, I develop interactive web applications and
-                        champion
-                        accessibility and performance. I'm also an <strong>AWS Certified Cloud Practitioner</strong>
-                        with deep
-                        experience across Azure and Oracle Cloud platforms.
-                    </p>
+            <div class="bento-grid">
+                <!-- Bento Card 1: Bio (Col-2, Row-2) -->
+                <div class="bento-card bento-card--col-2 bento-card--row-2 reveal">
+                    <div>
+                        <h3 class="bento-card__title"><i class="ri-user-fill"></i> Biography</h3>
+                        <div class="bento-card__content">
+                            <p>
+                                I'm a <strong>B.Tech Computer Science</strong> student at <strong>Amrita Vishwa Vidyapeetham, Amaravati</strong>,
+                                with a minor from <strong>IIT Mandi</strong> in Advanced Computing and Emerging Technologies. My
+                                passion lies at the intersection of <strong>Artificial Intelligence</strong> and <strong>Software Engineering</strong>.
+                            </p>
+                            <p>
+                                With hands-on experience in <strong>Generative AI, LLMs, RAG systems, and MCP server integration</strong>,
+                                I focus on building intelligent tools that are practical, user-centric, and deliver real-world impact.
+                                From winning national hackathons to founding a technical club for 350+ students, I thrive on solving
+                                complex problems and building communities.
+                            </p>
+                            <p>
+                                As a <strong>Microsoft Student Ambassador</strong>, I develop interactive web applications and champion
+                                accessibility and performance. I'm also an <strong>AWS Certified Cloud Practitioner</strong> with deep
+                                experience across Azure and Oracle Cloud platforms.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="about__cards reveal">
-                    <div class="about__card">
-                        <div class="about__card-icon">
-                            <i class="ri-graduation-cap-fill"></i>
-                        </div>
-                        <div>
-                            <h3 class="about__card-title">Education</h3>
-                            <p class="about__card-text">B.Tech CS @ Amrita (8.0 GPA)<br>Minor @ IIT Mandi (94%)</p>
+
+                <!-- Bento Card 2: Location Radar (Col-1) -->
+                <div class="bento-card bento-card--location reveal">
+                    <div class="location-radar">
+                        <div class="location-dot"></div>
+                    </div>
+                    <div>
+                        <h3 class="bento-card__title" style="justify-content: center; margin-bottom: 4px;"><i class="ri-map-pin-2-fill"></i> Location</h3>
+                        <p class="bento-card__content" style="color: var(--text-tertiary);">Guntur, Andhra Pradesh, India</p>
+                    </div>
+                </div>
+
+                <!-- Bento Card 3: Academic Brief (Col-1) -->
+                <div class="bento-card reveal">
+                    <div>
+                        <h3 class="bento-card__title"><i class="ri-graduation-cap-fill"></i> Academics</h3>
+                        <div class="bento-card__content">
+                            <p style="margin-bottom: 8px;"><strong>B.Tech CS @ Amrita</strong><br>CGPA: 8.03 / 10</p>
+                            <p><strong>Minor @ IIT Mandi</strong><br>Score: 94%</p>
                         </div>
                     </div>
-                    <div class="about__card">
-                        <div class="about__card-icon">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </div>
-                        <div>
-                            <h3 class="about__card-title">Location</h3>
-                            <p class="about__card-text">Guntur, Andhra Pradesh<br>India</p>
-                        </div>
-                    </div>
-                    <div class="about__card">
-                        <div class="about__card-icon">
-                            <i class="ri-focus-3-fill"></i>
-                        </div>
-                        <div>
-                            <h3 class="about__card-title">Focus Areas</h3>
-                            <p class="about__card-text">Generative AI · LLMs · RAG<br>Full-Stack Development</p>
+                </div>
+
+                <!-- Bento Card 4: Tech Arsenal (Col-3) -->
+                <div class="bento-card bento-card--col-3 reveal">
+                    <div>
+                        <h3 class="bento-card__title"><i class="ri-tools-fill"></i> Tech Arsenal</h3>
+                        <div class="skills-grid-inner">
+                            <!-- Programming -->
+                            <div class="skill-category-block">
+                                <div class="skill-category-block__title skill-category-block__title--prog">
+                                    <i class="ri-code-s-slash-fill"></i> Programming
+                                </div>
+                                <div class="skill-tags-list">
+                                    <span class="skill-badge">Python</span>
+                                    <span class="skill-badge">Java</span>
+                                    <span class="skill-badge">OOP</span>
+                                    <span class="skill-badge">DSA</span>
+                                    <span class="skill-badge">DBMS</span>
+                                    <span class="skill-badge">Computer Networks</span>
+                                </div>
+                            </div>
+                            <!-- Web Tech -->
+                            <div class="skill-category-block">
+                                <div class="skill-category-block__title skill-category-block__title--web">
+                                    <i class="ri-global-fill"></i> Web Tech
+                                </div>
+                                <div class="skill-tags-list">
+                                    <span class="skill-badge">Next.JS</span>
+                                    <span class="skill-badge">React.JS</span>
+                                    <span class="skill-badge">TypeScript</span>
+                                    <span class="skill-badge">FastAPI</span>
+                                    <span class="skill-badge">JavaScript</span>
+                                    <span class="skill-badge">SQL</span>
+                                    <span class="skill-badge">REST API</span>
+                                    <span class="skill-badge">Agile & Scrum</span>
+                                </div>
+                            </div>
+                            <!-- AI/ML -->
+                            <div class="skill-category-block">
+                                <div class="skill-category-block__title skill-category-block__title--ai">
+                                    <i class="ri-brain-fill"></i> AI / ML
+                                </div>
+                                <div class="skill-tags-list">
+                                    <span class="skill-badge">GenAI</span>
+                                    <span class="skill-badge">LLMs</span>
+                                    <span class="skill-badge">RAG</span>
+                                    <span class="skill-badge">Agentic AI</span>
+                                    <span class="skill-badge">Vector Embeddings</span>
+                                    <span class="skill-badge">FAISS</span>
+                                    <span class="skill-badge">Machine Learning</span>
+                                </div>
+                            </div>
+                            <!-- Tools & Cloud -->
+                            <div class="skill-category-block">
+                                <div class="skill-category-block__title skill-category-block__title--tools">
+                                    <i class="ri-settings-5-fill"></i> Tools & Cloud
+                                </div>
+                                <div class="skill-tags-list">
+                                    <span class="skill-badge">Docker</span>
+                                    <span class="skill-badge">AWS</span>
+                                    <span class="skill-badge">Microsoft Azure</span>
+                                    <span class="skill-badge">Oracle Cloud</span>
+                                    <span class="skill-badge">GitHub</span>
+                                    <span class="skill-badge">n8n</span>
+                                    <span class="skill-badge">Postman</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -216,193 +280,131 @@
                 <span class="section__label">02 — Education</span>
                 <h2 class="section__title">Academic Journey</h2>
             </div>
-            <div class="education__timeline">
-                <!-- Education Card 1 -->
-                <div class="education__item reveal">
-                    <div class="education__item-content">
-                        <div class="education__card education__card--primary">
-                            <div class="education__card-header">
-                                <div class="education__icon education__icon--primary">
-                                    AV
-                                </div>
-                                <div class="education__meta">
-                                    <span class="education__duration">2023 - 2027</span>
-                                </div>
-                            </div>
-                            <h3 class="education__institution">B.Tech — Computer Science & Engineering</h3>
-                            <p class="education__degree">Amrita Vishwa Vidyapeetham, Amaravati</p>
-
-                            <div class="education__status-badges">
-                                <span class="education__status-badge education__status-badge--primary">Final year</span>
-                                <span
-                                    class="education__status-badge education__status-badge--secondary">Full-time</span>
-                                <span class="education__status-badge education__status-badge--tertiary">Graduating
-                                    2027</span>
-                            </div>
-
-                            <div class="education__divider"></div>
-
-                            <div class="education__highlights">
-                                <div class="education__highlight-item">
-                                    <span class="education__highlight-label">CGPA</span>
-                                    <span class="education__highlight-value">8.03 / 10</span>
-                                    <div class="education__progress">
-                                        <div class="education__progress-bar" style="width: 86%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="education__thesis">
-                                <p class="education__thesis-label">THESIS / PROJECT</p>
-                                <p class="education__thesis-title">Enhancing MedRAG with Knowledge Graph Reasoning &
-                                    Explainable Clinical Decision Support</p>
-                            </div>
-
-                            <div class="education__coursework">
-                                <p class="education__coursework-label">RELEVANT COURSEWORK</p>
-                                <div class="education__courses">
-                                    <span class="education__course">Distributed Systems</span>
-                                    <span class="education__course">Compiler Design</span>
-                                    <span class="education__course">Cybersecurity</span>
-                                    <span class="education__course">Software Engineering</span>
-                                    <span class="education__course">ML / AI</span>
-                                    <span class="education__course">Data Structures</span>
-                                    <span class="education__course">Database Systems</span>
-                                    <span class="education__course">Computer Networks</span>
-                                </div>
-                            </div>
-
-                            <div class="education__achievements">
-                                <p class="education__achievements-label">ACTIVITIES & LEADERSHIP</p>
-                                <ul class="education__achievements-list">
-                                    <li><i class="ri-circle-fill"></i> Core member, Chakravyuha Technical Club</li>
-                                    <li><i class="ri-circle-fill"></i> Meta × Scaler × HuggingFace × PyTorch OpenEnv AI
-                                        Hackathon participant</li>
-                                    <li><i class="ri-circle-fill"></i> Competitive programming — LeetCode / Codeforces
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="timeline-container">
+                <!-- Card 1: B.Tech -->
+                <div class="timeline-card timeline-card--education reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">B.Tech — Computer Science & Engineering</h3>
+                            <p class="timeline-company">Amrita Vishwa Vidyapeetham, Amaravati</p>
                         </div>
-                        <div class="education__connector education__connector--active"></div>
+                        <span class="timeline-period">2023 - 2027</span>
+                    </div>
+                    
+                    <div class="timeline-badges">
+                        <span class="timeline-badge timeline-badge--primary">Final Year</span>
+                        <span class="timeline-badge timeline-badge--secondary">Full-time</span>
+                        <span class="timeline-badge timeline-badge--tertiary">Graduating 2027</span>
+                    </div>
+                    
+                    <div class="timeline-progress-wrapper">
+                        <div class="timeline-progress-label">
+                            <span>Academic CGPA</span>
+                            <span>8.03 / 10</span>
+                        </div>
+                        <div class="timeline-progress-track">
+                            <div class="timeline-progress-bar" style="width: 80.3%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-sub-block">
+                        <span class="timeline-sub-label">Thesis / Key Project</span>
+                        <p class="timeline-sub-value">Enhancing MedRAG with Knowledge Graph Reasoning & Explainable Clinical Decision Support</p>
+                    </div>
+                    
+                    <div class="timeline-sub-block">
+                        <span class="timeline-sub-label">Relevant Coursework</span>
+                        <div class="timeline-tags" style="margin-top: 6px;">
+                            <span class="tag">Distributed Systems</span>
+                            <span class="tag">Compiler Design</span>
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Software Engineering</span>
+                            <span class="tag">ML / AI</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Database Systems</span>
+                            <span class="tag">Computer Networks</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Education Card 2 -->
-                <div class="education__item reveal">
-                    <div class="education__item-content">
-                        <div class="education__card education__card--secondary">
-                            <div class="education__card-header">
-                                <div class="education__icon education__icon--secondary">
-                                    <i class="ri-book-open-fill"></i>
-                                </div>
-                                <div class="education__meta">
-                                    <span class="education__duration">Sept 2024 — Dec 2025</span>
-                                    <span class="education__level">Minor Degree</span>
-                                </div>
-                            </div>
-                            <h3 class="education__institution">Indian Institute of Technology</h3>
-                            <p class="education__degree">Minor: Advanced Computing & Emerging Tech</p>
-                            <p class="education__location"><i class="ri-map-pin-fill"></i> Mandi, India</p>
-
-                            <div class="education__highlights">
-                                <div class="education__highlight-item">
-                                    <span class="education__highlight-label">Score</span>
-                                    <span class="education__highlight-value">94%</span>
-                                    <div class="education__progress">
-                                        <div class="education__progress-bar" style="width: 94%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="education__coursework">
-                                <p class="education__coursework-label"><strong>Coursework:</strong></p>
-                                <div class="education__courses">
-                                    <span class="education__course">Python</span>
-                                    <span class="education__course">DBMS</span>
-                                    <span class="education__course">Machine Learning</span>
-                                </div>
-                            </div>
+                <!-- Card 2: IIT Mandi -->
+                <div class="timeline-card timeline-card--education reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Minor: Advanced Computing & Emerging Tech</h3>
+                            <p class="timeline-company">Indian Institute of Technology, Mandi</p>
                         </div>
-                        <div class="education__connector"></div>
+                        <span class="timeline-period">Sept 2024 — Dec 2025</span>
+                    </div>
+                    
+                    <div class="timeline-progress-wrapper">
+                        <div class="timeline-progress-label">
+                            <span>IIT Mandi Score</span>
+                            <span>94%</span>
+                        </div>
+                        <div class="timeline-progress-track">
+                            <div class="timeline-progress-bar" style="width: 94%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-sub-block">
+                        <span class="timeline-sub-label">Coursework Highlights</span>
+                        <div class="timeline-tags" style="margin-top: 6px;">
+                            <span class="tag">Python</span>
+                            <span class="tag">DBMS</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Education Card 3 -->
-                <div class="education__item reveal">
-                    <div class="education__item-content">
-                        <div class="education__card education__card--tertiary">
-                            <div class="education__card-header">
-                                <div class="education__icon education__icon--tertiary">
-                                    <i class="ri-school-fill"></i>
-                                </div>
-                                <div class="education__meta">
-                                    <span class="education__duration">2021 — 2023</span>
-                                    <span class="education__level">Junior College</span>
-                                </div>
-                            </div>
-                            <h3 class="education__institution">NRI Junior College</h3>
-                            <p class="education__degree">Andhra Pradesh Board of Education</p>
-                            <p class="education__location"><i class="ri-map-pin-fill"></i> Andhra Pradesh, India</p>
-
-                            <div class="education__highlights">
-                                <div class="education__highlight-item">
-                                    <span class="education__highlight-label">Score</span>
-                                    <span class="education__highlight-value">91%</span>
-                                    <div class="education__progress">
-                                        <div class="education__progress-bar" style="width: 91%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="education__coursework">
-                                <p class="education__coursework-label"><strong>Subjects:</strong></p>
-                                <div class="education__courses">
-                                    <span class="education__course">Mathematics</span>
-                                    <span class="education__course">Physics</span>
-                                    <span class="education__course">Chemistry</span>
-                                </div>
-                            </div>
+                <!-- Card 3: Junior College -->
+                <div class="timeline-card timeline-card--education reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Junior College (MPC)</h3>
+                            <p class="timeline-company">NRI Junior College, Andhra Pradesh</p>
                         </div>
-                        <div class="education__connector"></div>
+                        <span class="timeline-period">2021 — 2023</span>
+                    </div>
+                    
+                    <div class="timeline-progress-wrapper">
+                        <div class="timeline-progress-label">
+                            <span>BIEAP Score</span>
+                            <span>91%</span>
+                        </div>
+                        <div class="timeline-progress-track">
+                            <div class="timeline-progress-bar" style="width: 91%"></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Education Card 4 -->
-                <div class="education__item reveal">
-                    <div class="education__item-content">
-                        <div class="education__card education__card--quaternary">
-                            <div class="education__card-header">
-                                <div class="education__icon education__icon--quaternary">
-                                    <i class="ri-building-4-fill"></i>
-                                </div>
-                                <div class="education__meta">
-                                    <span class="education__duration">2021</span>
-                                    <span class="education__level">Secondary School</span>
-                                </div>
-                            </div>
-                            <h3 class="education__institution">Sri Venkateswara Bala Kuteer</h3>
-                            <p class="education__degree">Central Board of Secondary Education (CBSE)</p>
-                            <p class="education__location"><i class="ri-map-pin-fill"></i> Andhra Pradesh, India</p>
-
-                            <div class="education__highlights">
-                                <div class="education__highlight-item">
-                                    <span class="education__highlight-label">Score</span>
-                                    <span class="education__highlight-value">75%</span>
-                                    <div class="education__progress">
-                                        <div class="education__progress-bar" style="width: 75%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="education__achievements">
-                                <p class="education__achievements-label"><strong>Achievements:</strong></p>
-                                <ul class="education__achievements-list">
-                                    <li><i class="ri-star-fill"></i> Prefect</li>
-                                    <li><i class="ri-star-fill"></i> Sports & Music Club</li>
-                                    <li><i class="ri-trophy-fill"></i> District 4th in Chess</li>
-                                </ul>
-                            </div>
+                <!-- Card 4: CBSE -->
+                <div class="timeline-card timeline-card--education reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Secondary School (CBSE)</h3>
+                            <p class="timeline-company">Sri Venkateswara Bala Kuteer, Andhra Pradesh</p>
                         </div>
+                        <span class="timeline-period">2021</span>
+                    </div>
+                    
+                    <div class="timeline-progress-wrapper">
+                        <div class="timeline-progress-label">
+                            <span>CBSE Grade</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="timeline-progress-track">
+                            <div class="timeline-progress-bar" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-sub-block">
+                        <span class="timeline-sub-label">Leadership & Honors</span>
+                        <ul class="timeline-list" style="margin-top: 6px;">
+                            <li>Prefect</li>
+                            <li>Sports & Music Club</li>
+                            <li>District 4th in Chess</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -416,38 +418,28 @@
                 <span class="section__label">03 — Experience</span>
                 <h2 class="section__title">Where I've Worked</h2>
             </div>
-            <div class="experience__grid">
-                <!-- Saransh Solutions Internship -->
-                <div class="experience__card experience__card--saransh reveal">
-                    <div class="experience__card-accent experience__card-accent--saransh"></div>
-                    <div class="experience__card-header">
-                        <div class="experience__icon experience__icon--saransh">
-                            <i class="ri-code-box-fill"></i>
+            <div class="timeline-container">
+                <!-- Experience Card 1: Saransh Solutions -->
+                <div class="timeline-card timeline-card--experience reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Software Development Intern</h3>
+                            <p class="timeline-company">Saransh Solutions</p>
                         </div>
-                        <div>
-                            <h3 class="experience__role">Software Development Intern</h3>
-                            <p class="experience__company">Saransh Solutions</p>
-                        </div>
-                        <span class="experience__period">Apr 2026 — Jun 2026</span>
+                        <span class="timeline-period">Apr 2026 — Jun 2026</span>
                     </div>
-                    <ul class="experience__list">
-                        <li>Architected a full-stack applicant tracking system (ATS) using <strong>Flask and
-                                Next.js</strong>, automating recruitment workflow for the HR team.</li>
-                        <li>Implemented resume upload, parsing, and tracking modules processing 500+ resumes; integrated
-                            <strong>Azure Blob Storage and Azure SQL</strong>.
-                        </li>
-                        <li>Deployed on Microsoft Azure with 10+ REST API endpoints, cutting manual screening time by
-                            40%.</li>
+                    <ul class="timeline-list">
+                        <li>Architected a full-stack applicant tracking system (ATS) using <strong>Flask and Next.js</strong>, automating recruitment workflow for the HR team.</li>
+                        <li>Implemented resume upload, parsing, and tracking modules processing 500+ resumes; integrated <strong>Azure Blob Storage and Azure SQL</strong>.</li>
+                        <li>Deployed on Microsoft Azure with 10+ REST API endpoints, cutting manual screening time by 40%.</li>
                     </ul>
-                    <div class="experience__actions" style="margin-bottom: var(--space-md);">
-                        <a href="https://yellow-hill-06120a60f.7.azurestaticapps.net/" target="_blank" rel="noopener"
-                            class="project__link project__link--primary"
-                            style="padding: 0.5rem 1.05rem; font-size: var(--fs-xs); display: inline-flex; align-items: center; gap: var(--space-xs); background: linear-gradient(135deg, var(--blue) 0%, #60a5fa 100%);">
+                    <div class="timeline-sub-block" style="border-top: none; padding-top: 0; margin-top: 0; display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                        <a href="https://yellow-hill-06120a60f.7.azurestaticapps.net/" target="_blank" rel="noopener" class="btn btn--primary" style="padding: 0.5rem 1.05rem; font-size: var(--fs-xs); border-radius: var(--radius-sm);">
                             <i class="ri-external-link-line"></i>
                             <span>View Live Project</span>
                         </a>
                     </div>
-                    <div class="experience__tags">
+                    <div class="timeline-tags" style="margin-top: var(--space-md);">
                         <span class="tag">Python</span>
                         <span class="tag">Flask</span>
                         <span class="tag">Next.js</span>
@@ -458,27 +450,21 @@
                     </div>
                 </div>
 
-                <div class="experience__card reveal">
-                    <div class="experience__card-accent"></div>
-                    <div class="experience__card-header">
-                        <div class="experience__icon">
-                            <i class="ri-microsoft-fill"></i>
+                <!-- Experience Card 2: Microsoft Ambassador -->
+                <div class="timeline-card timeline-card--experience reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Web Developer</h3>
+                            <p class="timeline-company">Microsoft Student Ambassador</p>
                         </div>
-                        <div>
-                            <h3 class="experience__role">Web Developer</h3>
-                            <p class="experience__company">Microsoft Student Ambassador</p>
-                        </div>
-                        <span class="experience__period">Feb 2024 — Present</span>
+                        <span class="timeline-period">Feb 2024 — Present</span>
                     </div>
-                    <ul class="experience__list">
-                        <li>Designed and developed interactive web applications using <strong>HTML, CSS, and
-                                JavaScript</strong>, enhancing user experience and accessibility.</li>
-                        <li>Implemented modular, maintainable code structures and optimized front-end performance for
-                            faster load times and smoother interactions.</li>
-                        <li>Projects showcased within the Microsoft Learn Student Ambassador community, improving peer
-                            learning and fostering collaboration.</li>
+                    <ul class="timeline-list">
+                        <li>Designed and developed interactive web applications using <strong>HTML, CSS, and JavaScript</strong>, enhancing user experience and accessibility.</li>
+                        <li>Implemented modular, maintainable code structures and optimized front-end performance for faster load times and smoother interactions.</li>
+                        <li>Projects showcased within the Microsoft Learn Student Ambassador community, improving peer learning and fostering collaboration.</li>
                     </ul>
-                    <div class="experience__tags">
+                    <div class="timeline-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
@@ -486,41 +472,33 @@
                         <span class="tag">Accessibility</span>
                     </div>
                 </div>
-                <div class="experience__card reveal">
-                    <div class="experience__card-accent experience__card-accent--alt"></div>
-                    <div class="experience__card-header">
-                        <div class="experience__icon experience__icon--alt">
-                            <i class="ri-team-fill"></i>
+
+                <!-- Experience Card 3: Chakravyuha Technical Club -->
+                <div class="timeline-card timeline-card--experience reveal">
+                    <div class="timeline-header">
+                        <div class="timeline-meta">
+                            <h3 class="timeline-role">Founder & Technical Lead</h3>
+                            <p class="timeline-company">Chakravyuha Technical Club</p>
                         </div>
-                        <div>
-                            <h3 class="experience__role">Founder & Technical Lead</h3>
-                            <p class="experience__company">Chakravyuha Technical Club</p>
-                        </div>
-                        <span class="experience__period">July 2025 — Present</span>
+                        <span class="timeline-period">July 2025 — Present</span>
                     </div>
-                    <ul class="experience__list">
-                        <li>Founded and led a technical club for <strong>350+ students</strong>, increasing
-                            participation in hackathons by 40%.</li>
-                        <li>Supported juniors by guiding them in technical projects and sharing knowledge to build
-                            confidence and collaboration.</li>
-                        <li>Contributed to creating an active and engaging club environment that inspired innovation and
-                            increased student participation.</li>
+                    <ul class="timeline-list">
+                        <li>Founded and led a technical club for <strong>350+ students</strong>, increasing participation in hackathons by 40%.</li>
+                        <li>Supported juniors by guiding them in technical projects and sharing knowledge to build confidence and collaboration.</li>
+                        <li>Contributed to creating an active and engaging club environment that inspired innovation and increased student participation.</li>
                     </ul>
-                    <div class="experience__gallery">
-                        <div class="experience__gallery-item">
-                            <img src="images/club-speaking.jpg" alt="VMK presenting on AI at Chakravyuha club event"
-                                loading="lazy">
+                    <div class="experience__gallery" style="margin-top: var(--space-md); margin-bottom: var(--space-md); display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; border-radius: 12px; overflow: hidden;">
+                        <div class="experience__gallery-item" style="aspect-ratio: 16/10; overflow: hidden;">
+                            <img src="images/club-speaking.jpg" alt="VMK presenting on AI at Chakravyuha club event" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <div class="experience__gallery-item">
-                            <img src="images/club-presenting.jpg" alt="VMK presenting Agentic AI session to students"
-                                loading="lazy">
+                        <div class="experience__gallery-item" style="aspect-ratio: 16/10; overflow: hidden;">
+                            <img src="images/club-presenting.jpg" alt="VMK presenting Agentic AI session to students" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <div class="experience__gallery-item">
-                            <img src="images/club-audience.jpg" alt="Packed auditorium at Chakravyuha club session"
-                                loading="lazy">
+                        <div class="experience__gallery-item" style="aspect-ratio: 16/10; overflow: hidden;">
+                            <img src="images/club-audience.jpg" alt="Packed auditorium at Chakravyuha club session" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                     </div>
-                    <div class="experience__tags">
+                    <div class="timeline-tags">
                         <span class="tag">Leadership</span>
                         <span class="tag">Mentoring</span>
                         <span class="tag">Community Building</span>
@@ -538,203 +516,173 @@
                 <span class="section__label">04 — Projects</span>
                 <h2 class="section__title">Featured Work</h2>
             </div>
-            <div class="projects__grid">
-                <!-- Project 1: Amrita Alumni Portal -->
-                <div class="project__card project__card--featured project__card--alumni reveal">
-                    <div class="project__card-inner">
-                        <div class="project__image" id="projectImageAlumni">
-                            <img src="images/alumni.png"
-                                alt="Amrita Alumni Portal - Full Stack Alumni Portal for CIR Dept" loading="lazy"
-                                class="project__image-img">
-                            <div class="project__image-overlay">
-                                <span class="project__rank project__rank--gold">
-                                    <i class="ri-checkbox-circle-fill"></i> Deployed for CIR Dept
-                                </span>
+            
+            <div class="projects-bento-grid">
+                <!-- Project 1: Amrita Alumni Portal (Col 2, Row 2) -->
+                <div class="project-card-bento project-card-bento--col-2 project-card-bento--row-2 project-card-bento--alumni reveal">
+                    <div class="project-bento-layout-split">
+                        <div class="project-bento-info">
+                            <div class="project-bento-details">
+                                <div class="project-bento-header">
+                                    <span class="project__label">Full-Stack & Cloud</span>
+                                    <span class="project-bento-rank">
+                                        <i class="ri-checkbox-circle-fill"></i> CIR Portal
+                                    </span>
+                                </div>
+                                <h3 class="project__title" style="margin-bottom: var(--space-xs);">Amrita Alumni Portal</h3>
+                                <p class="project__description" style="font-size: var(--fs-xs); line-height: 1.6;">
+                                    Developed and deployed a secure, full-stack Alumni Portal for the Corporate and Industry Relations (CIR) department, enabling registration, networking, and real-time career tracking for hundreds of alumni and graduating students. Engineered a data-driven administrative dashboard featuring multi-attribute database filtering, bulk emailing capabilities, and custom CSV data exports. Architected a containerized cloud infrastructure using Docker Compose on AWS EC2 & S3, utilizing Redis for cache control, Nginx as a reverse proxy, and Cloudflare DNS proxying.
+                                </p>
                             </div>
-                        </div>
-                        <div class="project__info">
-                            <div class="project__label">Full-Stack & Cloud</div>
-                            <h3 class="project__title">Amrita Alumni Portal</h3>
-                            <p class="project__description">
-                                Developed and deployed a secure, full-stack Alumni Portal for the Corporate and Industry
-                                Relations (CIR) department, enabling registration, networking, and real-time career
-                                tracking for hundreds of alumni and graduating students. Engineered a data-driven
-                                administrative dashboard featuring multi-attribute database filtering, bulk emailing
-                                capabilities, and custom CSV data exports. Architected a containerized cloud
-                                infrastructure using Docker Compose on AWS EC2 & S3, utilizing Redis for cache control,
-                                Nginx as a reverse proxy, and Cloudflare DNS proxying.
-                            </p>
-                            <div class="project__tech">
-                                <span class="tag tag--project">Next.js (React)</span>
-                                <span class="tag tag--project">FastAPI (Python)</span>
-                                <span class="tag tag--project">PostgreSQL</span>
-                                <span class="tag tag--project">Redis</span>
-                                <span class="tag tag--project">Docker Compose</span>
-                                <span class="tag tag--project">AWS EC2/S3</span>
-                                <span class="tag tag--project">Nginx</span>
-                                <span class="tag tag--project">Cloudflare</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://amrita-amaravati-alumni.com/" target="_blank" rel="noopener"
-                                    class="project__link">
+                            <div class="project-bento-footer">
+                                <div class="project__tech" style="margin-bottom: var(--space-md);">
+                                    <span class="tag">Next.js (React)</span>
+                                    <span class="tag">FastAPI (Python)</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Redis</span>
+                                    <span class="tag">Docker Compose</span>
+                                    <span class="tag">AWS EC2/S3</span>
+                                    <span class="tag">Nginx</span>
+                                </div>
+                                <a href="https://amrita-amaravati-alumni.com/" target="_blank" rel="noopener" class="btn btn--primary" style="padding: 0.5rem 1rem; font-size: var(--fs-xs); border-radius: var(--radius-sm); width: fit-content; display: inline-flex;">
                                     <i class="ri-external-link-line"></i>
                                     <span>Live Portal</span>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: FlowMail -->
-                <div class="project__card project__card--featured project__card--flowmail reveal">
-                    <div class="project__card-inner">
-                        <div class="project__image" id="projectImageFlowMail">
-                            <img src="images/flowmail.png" alt="FlowMail - Bulk Email Automation Platform"
-                                loading="lazy" class="project__image-img">
-                            <div class="project__image-overlay">
-                                <span class="project__rank">
-                                    <i class="ri-send-plane-fill"></i> Built for Placement Dept
-                                </span>
-                            </div>
-                        </div>
-                        <div class="project__info">
-                            <div class="project__label project__label--green">Web App & Automation</div>
-                            <h3 class="project__title">FlowMail — Bulk Email Automation</h3>
-                            <p class="project__description">
-                                Developed a bulk email automation platform parsing Excel sheets and dispatching
-                                personalized HTML emails to 1,000+ companies per campaign. Created a custom
-                                Markdown-to-HTML rendering engine with attachments and follow-up threading, cutting
-                                outreach turnaround by 50%.
-                            </p>
-                            <div class="project__tech">
-                                <span class="tag tag--project">Node.js</span>
-                                <span class="tag tag--project">Express.js</span>
-                                <span class="tag tag--project">Power Automate</span>
-                                <span class="tag tag--project">Office 365</span>
-                                <span class="tag tag--project">Microsoft Azure</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://mail-merge-jgn2.onrender.com/index.html" target="_blank" rel="noopener"
-                                    class="project__link project__link--primary">
-                                    <i class="ri-external-link-line"></i>
-                                    <span>Live Application</span>
-                                </a>
-                            </div>
+                        
+                        <div class="project-bento-visual">
+                            <img src="images/alumni.png" alt="Amrita Alumni Portal Screenshot" loading="lazy" class="project-bento-mockup">
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Document Analysis RAG Model -->
-                <div class="project__card project__card--featured reveal">
-                    <div class="project__card-inner">
-                        <div class="project__image" id="projectImage3">
-                            <img src="images/rag.png"
-                                alt="Document Analysis RAG Model - Retrieval-Augmented Generation System" loading="lazy"
-                                class="project__image-img">
-                            <div class="project__image-overlay">
-                                <span class="project__rank">
-                                    <i class="ri-trophy-fill"></i> Ranked 39th / 3000+ teams
-                                </span>
-                            </div>
+                <!-- Project 2: FlowMail (Col 1, Row 2) -->
+                <div class="project-card-bento project-card-bento--row-2 project-card-bento--flowmail reveal" style="justify-content: space-between; height: 100%;">
+                    <div class="project-bento-details">
+                        <div class="project-bento-header">
+                            <span class="project__label project__label--green">Email Automation</span>
+                            <span class="project-bento-rank project-bento-rank--silver">
+                                <i class="ri-send-plane-fill"></i> Placement Dept
+                            </span>
                         </div>
-                        <div class="project__info">
-                            <div class="project__label">AI / NLP</div>
-                            <h3 class="project__title">Document Analysis RAG Model</h3>
-                            <p class="project__description">
-                                Developed a <strong>Retrieval-Augmented Generation (RAG)</strong> system to automate
-                                document analysis
-                                and streamline compliance workflows. Fine-tuned LLMs with domain-specific datasets and
-                                integrated
-                                <strong>FAISS-based retrieval</strong> for efficient knowledge extraction. Achieved an
-                                accuracy of <strong>97.3%</strong>.
-                            </p>
-                            <div class="project__tech">
-                                <span class="tag tag--project">Python</span>
-                                <span class="tag tag--project">GenAI</span>
-                                <span class="tag tag--project">LangChain</span>
-                                <span class="tag tag--project">FAISS</span>
-                                <span class="tag tag--project">LLMs</span>
-                                <span class="tag tag--project">RAG</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/KolliparaVMKMithra/document_analysis_rag_model"
-                                    target="_blank" rel="noopener" class="project__link">
-                                    <i class="ri-github-fill"></i>
-                                    <span>View on GitHub</span>
-                                </a>
-                            </div>
+                        <h3 class="project__title" style="margin-bottom: var(--space-xs);">FlowMail — Bulk Email</h3>
+                        <p class="project__description" style="font-size: var(--fs-xs); line-height: 1.6;">
+                            Developed a bulk email automation platform parsing Excel sheets and dispatching personalized HTML emails to 1,000+ companies per campaign. Created a custom Markdown-to-HTML rendering engine with attachments and follow-up threading, cutting outreach turnaround by 50%.
+                        </p>
+                        <div class="project__tech" style="margin-top: 4px;">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">Power Automate</span>
+                            <span class="tag">Office 365</span>
+                            <span class="tag">Azure</span>
                         </div>
+                    </div>
+                    
+                    <div class="project-bento-visual" style="min-height: 150px; margin-top: var(--space-md); margin-bottom: var(--space-md);">
+                        <img src="images/flowmail.png" alt="FlowMail Screenshot" loading="lazy" class="project-bento-mockup">
+                    </div>
+                    
+                    <a href="https://mail-merge-jgn2.onrender.com/index.html" target="_blank" rel="noopener" class="btn btn--outline" style="padding: 0.5rem 1rem; font-size: var(--fs-xs); border-radius: var(--radius-sm); text-align: center; width: 100%; display: block;">
+                        <i class="ri-external-link-line"></i>
+                        <span>Live Application</span>
+                    </a>
+                </div>
+
+                <!-- Project 3: Document Analysis RAG Model (Col 1, Row 1) -->
+                <div class="project-card-bento project-card-bento--rag reveal" style="height: 100%; justify-content: space-between;">
+                    <div class="project-bento-details">
+                        <div class="project-bento-header">
+                            <span class="project__label">AI / NLP</span>
+                            <span class="project-bento-rank">
+                                <i class="ri-trophy-fill"></i> Top 1%
+                            </span>
+                        </div>
+                        <h3 class="project__title" style="margin-bottom: var(--space-xs);">Document RAG Model</h3>
+                        <p class="project__description" style="font-size: var(--fs-xs); line-height: 1.6;">
+                            Retrieval-Augmented Generation (RAG) system automating document analysis and compliance workflows. Fine-tuned LLMs with domain-specific datasets and integrated FAISS-based vector database retrieval for efficient knowledge extraction. Achieved 97.3% accuracy.
+                        </p>
+                    </div>
+                    
+                    <div class="project-bento-visual" style="min-height: 100px; padding: 10px; margin: 10px 0; background: radial-gradient(circle at center, rgba(6, 182, 212, 0.05) 0%, transparent 80%); border: none;">
+                        <!-- Glowing AI Brain/Robot mascot representation -->
+                        <img src="images/rag.png" alt="RAG Mascot" loading="lazy" class="project-bento-mascot">
+                    </div>
+                    
+                    <div>
+                        <div class="project__tech" style="margin-bottom: var(--space-md);">
+                            <span class="tag">Python</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">LLMs</span>
+                        </div>
+                        <a href="https://github.com/KolliparaVMKMithra/document_analysis_rag_model" target="_blank" rel="noopener" class="btn btn--outline" style="padding: 0.5rem 1rem; font-size: var(--fs-xs); border-radius: var(--radius-sm); text-align: center; width: 100%; display: block;">
+                            <i class="ri-github-fill"></i>
+                            <span>View Repository</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 4: Swastya -->
-                <div class="project__card project__card--featured reveal">
-                    <div class="project__card-inner">
-                        <div class="project__image" id="projectImage4">
-                            <img src="images/smart-byte.png" alt="Swastya - AI Food Management Platform" loading="lazy"
-                                class="project__image-img">
-                            <div class="project__image-overlay">
-                                <span class="project__rank project__rank--gold">
-                                    <i class="ri-trophy-fill"></i> 🏆 Winner — Innofusion National Hackathon
-                                </span>
+                <!-- Project 4: Swastya (Col 2, Row 1) -->
+                <div class="project-card-bento project-card-bento--col-2 project-card-bento--swastya reveal">
+                    <div class="project-bento-layout-split">
+                        <div class="project-bento-info">
+                            <div class="project-bento-details">
+                                <div class="project-bento-header">
+                                    <span class="project__label project__label--green">AI / Vision</span>
+                                    <span class="project-bento-rank">
+                                        <i class="ri-trophy-fill"></i> 🏆 1st Place Winner
+                                    </span>
+                                </div>
+                                <h3 class="project__title" style="margin-bottom: var(--space-xs);">Swastya — AI Food Platform</h3>
+                                <p class="project__description" style="font-size: var(--fs-xs); line-height: 1.6;">
+                                    Engineered an end-to-end AI-powered system using Microsoft Azure Custom Vision to automatically detect and standardize expiry dates from food items. Built an adaptive AI chatbot that generates personalized recipes and donation suggestions, reducing food wastage through real-time recommendations.
+                                </p>
                             </div>
-                        </div>
-                        <div class="project__info">
-                            <div class="project__label project__label--green">AI / Computer Vision</div>
-                            <h3 class="project__title">Swastya — AI Food Management Platform</h3>
-                            <p class="project__description">
-                                Engineered an end-to-end <strong>AI-powered system</strong> using Microsoft Azure Custom
-                                Vision to
-                                automatically detect and standardize expiry dates from food items, enabling intelligent
-                                <strong>food tracking</strong> and timely expiry notifications. Built an
-                                <strong>adaptive AI chatbot</strong>
-                                that generates personalized recipes and donation suggestions, reducing food wastage
-                                through real-time recommendations.
-                            </p>
-                            <div class="project__tech">
-                                <span class="tag tag--project">Azure Custom Vision</span>
-                                <span class="tag tag--project">AI/ML</span>
-                                <span class="tag tag--project">Computer Vision</span>
-                                <span class="tag tag--project">Python</span>
-                                <span class="tag tag--project">Flask</span>
-                                <span class="tag tag--project">MySQL</span>
-                            </div>
-                            <div class="project__actions">
-                                <a href="http://smart-bite-beryl.vercel.app/" target="_blank" rel="noopener"
-                                    class="project__link project__link--primary">
+                            <div>
+                                <div class="project__tech" style="margin-bottom: var(--space-md);">
+                                    <span class="tag">Azure Custom Vision</span>
+                                    <span class="tag">Computer Vision</span>
+                                    <span class="tag">Flask</span>
+                                    <span class="tag">MySQL</span>
+                                </div>
+                                <a href="http://smart-bite-beryl.vercel.app/" target="_blank" rel="noopener" class="btn btn--primary" style="padding: 0.5rem 1rem; font-size: var(--fs-xs); border-radius: var(--radius-sm); width: fit-content; display: inline-flex;">
                                     <i class="ri-external-link-line"></i>
                                     <span>Live Demo</span>
                                 </a>
                             </div>
                         </div>
+                        
+                        <div class="project-bento-visual">
+                            <img src="images/smart-byte.png" alt="Swastya App Screenshot" loading="lazy" class="project-bento-mockup">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 5: Inventory Management System -->
-                <div class="project__card reveal">
-                    <div class="project__card-inner">
-                        <div class="project__image project__image--small" id="projectImage5">
-                            <img src="images/github.png" alt="GitHub - Inventory Management System Repository"
-                                loading="lazy" class="project__image-img project__image-img--logo">
-                        </div>
-                        <div class="project__info">
-                            <div class="project__label project__label--purple">Desktop App</div>
-                            <h3 class="project__title">Inventory Management System</h3>
-                            <p class="project__description">
-                                Built a desktop-based inventory management application using <strong>Python and
-                                    Tkinter</strong>,
-                                tailored for small business needs. Implemented <strong>secure role-based
-                                    authentication</strong>,
-                                providing separate dashboards for admins and employees.
-                            </p>
-                            <div class="project__tech">
-                                <span class="tag tag--project">Python</span>
-                                <span class="tag tag--project">Tkinter</span>
-                                <span class="tag tag--project">SQL</span>
+                <!-- Project 5: Inventory Management System (Col 3, Row 1) -->
+                <div class="project-card-bento project-card-bento--col-3 project-card-bento--inventory reveal">
+                    <div class="project-bento-layout-banner">
+                        <div style="max-width: 60%; display: flex; flex-direction: column; gap: var(--space-xs);">
+                            <div class="project-bento-header" style="margin-bottom: 0;">
+                                <span class="project__label project__label--purple">Desktop App</span>
                             </div>
-                            <div class="project__actions">
-                                <a href="https://github.com/KolliparaVMKMithra?tab=repositories" target="_blank"
-                                    rel="noopener" class="project__link">
+                            <h3 class="project__title" style="margin-bottom: 0;">Inventory Management System</h3>
+                            <p class="project__description" style="font-size: var(--fs-xs); line-height: 1.5; margin-bottom: 0;">
+                                Built a desktop-based inventory management application using Python and Tkinter, tailored for small business needs. Implemented secure role-based authentication, providing separate dashboards for admins and employees.
+                            </p>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; gap: var(--space-lg); flex-shrink: 0;">
+                            <div class="project-bento-banner-logo">
+                                <i class="ri-github-fill"></i>
+                            </div>
+                            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-xs);">
+                                <div class="project__tech" style="justify-content: flex-end; margin-top: 0;">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Tkinter</span>
+                                    <span class="tag">SQLite</span>
+                                </div>
+                                <a href="https://github.com/KolliparaVMKMithra?tab=repositories" target="_blank" rel="noopener" class="btn btn--outline" style="padding: 0.5rem 1rem; font-size: var(--fs-xs); border-radius: var(--radius-sm); margin-top: 4px;">
                                     <i class="ri-github-fill"></i>
                                     <span>View Repository</span>
                                 </a>
@@ -746,106 +694,11 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-        <div class="container">
-            <div class="section__header reveal">
-                <span class="section__label">05 — Skills</span>
-                <h2 class="section__title">Tech Arsenal</h2>
-            </div>
-            <div class="skills__grid">
-                <div class="skills__category reveal">
-                    <div class="skills__category-header">
-                        <div class="skills__category-icon">
-                            <i class="ri-code-s-slash-fill"></i>
-                        </div>
-                        <h3 class="skills__category-title">Programming</h3>
-                    </div>
-                    <div class="skills__tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Data Structures & Algorithms</span>
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Computer Networking</span>
-                        <span class="skill-tag">DBMS</span>
-                    </div>
-                </div>
-                <div class="skills__category reveal">
-                    <div class="skills__category-header">
-                        <div class="skills__category-icon skills__category-icon--web">
-                            <i class="ri-global-fill"></i>
-                        </div>
-                        <h3 class="skills__category-title">Web Technologies</h3>
-                    </div>
-                    <div class="skills__tags">
-                        <span class="skill-tag">React.JS</span>
-                        <span class="skill-tag">Next.JS</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">Agile & Scrum</span>
-                    </div>
-                </div>
-                <div class="skills__category reveal">
-                    <div class="skills__category-header">
-                        <div class="skills__category-icon skills__category-icon--ai">
-                            <i class="ri-brain-fill"></i>
-                        </div>
-                        <h3 class="skills__category-title">AI / ML</h3>
-                    </div>
-                    <div class="skills__tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">LLM Fine-tuning</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">Agentic AI</span>
-                        <span class="skill-tag">AI Automation</span>
-                        <span class="skill-tag">Vector Embeddings</span>
-                        <span class="skill-tag">FAISS</span>
-                    </div>
-                </div>
-                <div class="skills__category reveal">
-                    <div class="skills__category-header">
-                        <div class="skills__category-icon skills__category-icon--tools">
-                            <i class="ri-tools-fill"></i>
-                        </div>
-                        <h3 class="skills__category-title">Tools & DevOps</h3>
-                    </div>
-                    <div class="skills__tags">
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Jupyter Notebook</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">n8n</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-                <div class="skills__category reveal">
-                    <div class="skills__category-header">
-                        <div class="skills__category-icon skills__category-icon--cloud">
-                            <i class="ri-cloud-fill"></i>
-                        </div>
-                        <h3 class="skills__category-title">Cloud Platforms</h3>
-                    </div>
-                    <div class="skills__tags">
-                        <span class="skill-tag">Microsoft Azure</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Oracle Cloud</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
     <section class="section gallery" id="gallery">
         <div class="container">
             <div class="section__header reveal">
-                <span class="section__label">06 — Gallery</span>
+                <span class="section__label">05 — Gallery</span>
                 <h2 class="section__title">Moments That Matter</h2>
             </div>
 
@@ -859,7 +712,6 @@
             <div class="hackathon-showcase">
                 <!-- Innofusion - 1st Place -->
                 <div class="hackathon-card hackathon-card--gold reveal">
-                    <div class="hackathon-card__glow"></div>
                     <div class="hackathon-card__badge">
                         <div class="hackathon-card__badge-icon">
                             <i class="ri-trophy-fill"></i>
@@ -870,50 +722,41 @@
                         </div>
                     </div>
                     <div class="hackathon-card__image">
-                        <img src="images/innofusion.jpg" alt="Innofusion National Hackathon — 1st Place Award Ceremony"
-                            loading="lazy">
+                        <img src="images/innofusion.jpg" alt="Innofusion National Hackathon — 1st Place Award Ceremony" loading="lazy">
                     </div>
                     <div class="hackathon-card__info">
                         <h3 class="hackathon-card__title">Innofusion National Hackathon</h3>
-                        <p class="hackathon-card__description">Secured 1st place by building <strong>Swastya</strong> —
-                            an AI-powered Food Management & Waste Reduction Platform using Azure Custom Vision,
-                            real-time chatbot, and intelligent expiry tracking.</p>
+                        <p class="hackathon-card__description">Secured 1st place by building <strong>Swastya</strong> — an AI-powered Food Management & Waste Reduction Platform using Azure Custom Vision, real-time chatbot, and expiry tracking.</p>
                         <div class="hackathon-card__tags">
-                            <span class="tag tag--project">AI/ML</span>
-                            <span class="tag tag--project">Azure</span>
-                            <span class="tag tag--project">Computer Vision</span>
-                            <span class="tag tag--project">Flask</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Flask</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Imagine Cup - 3rd Place -->
                 <div class="hackathon-card hackathon-card--bronze reveal">
-                    <div class="hackathon-card__glow"></div>
                     <div class="hackathon-card__badge">
                         <div class="hackathon-card__badge-icon hackathon-card__badge-icon--bronze">
                             <i class="ri-medal-fill"></i>
                         </div>
                         <div class="hackathon-card__badge-info">
                             <span class="hackathon-card__badge-place">3rd Place 🥉</span>
-                            <span class="hackathon-card__badge-detail">Microsoft Imagine Cup — Team Tech
-                                Innovators</span>
+                            <span class="hackathon-card__badge-detail">Microsoft Imagine Cup — Team Tech Innovators</span>
                         </div>
                     </div>
                     <div class="hackathon-card__image">
-                        <img src="images/imagine-cup.jpg"
-                            alt="Microsoft Imagine Cup — 2nd Runner Up, Team Tech Innovators" loading="lazy">
+                        <img src="images/imagine-cup.jpg" alt="Microsoft Imagine Cup — 2nd Runner Up, Team Tech Innovators" loading="lazy">
                     </div>
                     <div class="hackathon-card__info">
                         <h3 class="hackathon-card__title">Microsoft Imagine Cup</h3>
-                        <p class="hackathon-card__description">Recognized as 2nd Runner Up for building an AI-enabled
-                            <strong>social impact project</strong> at the Microsoft Imagine Cup, Amrita Amaravati
-                            Campus.
-                        </p>
+                        <p class="hackathon-card__description">Recognized as 2nd Runner Up for building an AI-enabled <strong>social impact project</strong> at the Microsoft Imagine Cup, Amrita Amaravati Campus.</p>
                         <div class="hackathon-card__tags">
-                            <span class="tag tag--project">Microsoft</span>
-                            <span class="tag tag--project">AI for Good</span>
-                            <span class="tag tag--project">Social Impact</span>
+                            <span class="tag">Microsoft</span>
+                            <span class="tag">AI for Good</span>
+                            <span class="tag">Social Impact</span>
                         </div>
                     </div>
                 </div>
@@ -928,25 +771,22 @@
             </div>
 
             <div class="club-gallery">
-                <div class="club-gallery__item club-gallery__item--feature reveal">
-                    <img src="images/club-speaking.jpg" alt="VMK Mithra speaking on AI & Hackathons at Chakravyuha"
-                        loading="lazy">
+                <div class="club-gallery__item reveal">
+                    <img src="images/club-speaking.jpg" alt="VMK Mithra speaking on AI & Hackathons at Chakravyuha" loading="lazy">
                     <div class="club-gallery__caption">
                         <span class="club-gallery__label"><i class="ri-mic-fill"></i> Speaking</span>
                         <h4>AI & Hackathon Innovation</h4>
                     </div>
                 </div>
-                <div class="club-gallery__item club-gallery__item--feature reveal">
-                    <img src="images/club-presenting.jpg" alt="VMK presenting Agentic AI workshop to packed hall"
-                        loading="lazy">
+                <div class="club-gallery__item reveal">
+                    <img src="images/club-presenting.jpg" alt="VMK presenting Agentic AI workshop to packed hall" loading="lazy">
                     <div class="club-gallery__caption">
                         <span class="club-gallery__label"><i class="ri-presentation-fill"></i> Workshop</span>
                         <h4>Unleashing Agentic AI</h4>
                     </div>
                 </div>
                 <div class="club-gallery__item club-gallery__item--wide reveal">
-                    <img src="images/club-audience.jpg"
-                        alt="Packed auditorium at Chakravyuha club event — 350+ students" loading="lazy">
+                    <img src="images/club-audience.jpg" alt="Packed auditorium at Chakravyuha club event — 350+ students" loading="lazy">
                     <div class="club-gallery__caption">
                         <span class="club-gallery__label"><i class="ri-group-fill"></i> 350+ Students</span>
                         <h4>A Thriving Tech Community</h4>
@@ -960,7 +800,7 @@
     <section class="section certifications" id="certifications">
         <div class="container">
             <div class="section__header reveal">
-                <span class="section__label">07 — Certifications</span>
+                <span class="section__label">06 — Certifications</span>
                 <h2 class="section__title">Credentials</h2>
             </div>
             <div class="certs__grid">
@@ -1007,7 +847,7 @@
     <section class="section achievements" id="achievements">
         <div class="container">
             <div class="section__header reveal">
-                <span class="section__label">08 — Achievements</span>
+                <span class="section__label">07 — Achievements</span>
                 <h2 class="section__title">Recognition & Wins</h2>
             </div>
             <div class="achievements__grid">
@@ -1018,11 +858,9 @@
                     </div>
                     <div class="achievement__content">
                         <h3 class="achievement__title">Innofusion National Hackathon</h3>
-                        <p class="achievement__text">Secured 1st place out of <strong>100+ teams</strong> by building an
-                            AI-powered solution.</p>
+                        <p class="achievement__text">Secured 1st place out of <strong>100+ teams</strong> by building an AI-powered solution.</p>
                         <div class="achievement__photo-slot" id="hackathonPhoto1">
-                            <img src="images/innofusion.jpg" alt="Innofusion National Hackathon 1st Place"
-                                loading="lazy">
+                            <img src="images/innofusion.jpg" alt="Innofusion National Hackathon 1st Place" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -1033,8 +871,7 @@
                     </div>
                     <div class="achievement__content">
                         <h3 class="achievement__title">Microsoft Imagine Cup</h3>
-                        <p class="achievement__text">Recognized for an AI-enabled <strong>social impact
-                                project</strong>.</p>
+                        <p class="achievement__text">Recognized for an AI-enabled <strong>social impact project</strong>.</p>
                         <div class="achievement__photo-slot" id="hackathonPhoto2">
                             <img src="images/imagine-cup.jpg" alt="Microsoft Imagine Cup Award Ceremony" loading="lazy">
                         </div>
@@ -1047,8 +884,7 @@
                     </div>
                     <div class="achievement__content">
                         <h3 class="achievement__title">Samkalp Paper Presentation</h3>
-                        <p class="achievement__text">Secured 2nd place at Samkalp Paper Presentation, <strong>KHIT
-                                University</strong>.</p>
+                        <p class="achievement__text">Secured 2nd place at Samkalp Paper Presentation, <strong>KHIT University</strong>.</p>
                     </div>
                 </div>
                 <div class="achievement__card reveal">
@@ -1058,11 +894,7 @@
                     </div>
                     <div class="achievement__content">
                         <h3 class="achievement__title">National Hackathon Finalist</h3>
-                        <p class="achievement__text">Finalist at <strong>Convolve</strong> (Pan IIT),
-                            <strong>HackVyuha</strong>, <strong>KodeKurukshetra</strong>,
-                            <strong>HackTheFuture</strong>, <strong>Ease-the-Error</strong>, and more competitive
-                            national-level hackathons.
-                        </p>
+                        <p class="achievement__text">Finalist at <strong>Convolve</strong> (Pan IIT), <strong>HackVyuha</strong>, <strong>KodeKurukshetra</strong>, <strong>HackTheFuture</strong>, <strong>Ease-the-Error</strong>, and more competitive national-level hackathons.</p>
                     </div>
                 </div>
             </div>
@@ -1073,10 +905,9 @@
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section__header reveal">
-                <span class="section__label">09 — Contact</span>
+                <span class="section__label">08 — Contact</span>
                 <h2 class="section__title">Let's Connect</h2>
-                <p class="section__subtitle">I'm always open to discussing new projects, creative ideas, or
-                    opportunities to be part of something great.</p>
+                <p class="section__subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.</p>
             </div>
             <div class="contact__grid">
                 <div class="contact__links reveal">
@@ -1126,8 +957,7 @@
                 <div class="contact__cta reveal">
                     <div class="contact__cta-card">
                         <h3 class="contact__cta-title">Have a project in mind?</h3>
-                        <p class="contact__cta-text">Whether it's an AI-powered solution, a web application, or a
-                            hackathon project — I'd love to collaborate and bring ideas to life.</p>
+                        <p class="contact__cta-text">Whether it's an AI-powered solution, a web application, or a hackathon project — I'd love to collaborate and bring ideas to life.</p>
                         <a href="mailto:kolliparamithra84@gmail.com?subject=Let's%20Collaborate"
                             class="btn btn--primary btn--large">
                             <span>Send me a message</span>
